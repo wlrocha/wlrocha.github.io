@@ -33,6 +33,11 @@ body section:nth-child(2n)
   background-color: #F9F9F9;
 }
 
+section{
+  padding-top: 100px;
+  padding-bottom: 90px;
+}
+
 
 .transparent_button {
   color: white;
