@@ -33,10 +33,6 @@ body section:nth-child(2n)
   background-color: #F9F9F9;
 }
 
-section{
-  padding-top: 145px;
-  padding-bottom: 145px;
-}
 
 .transparent_button {
   color: white;
@@ -64,6 +60,16 @@ section{
   75% {background-image: url("../images/small_bg.jpg");}
 }
 
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .heading_section {
   background-image: url("../images/small_bg.jpg");
   background-position: center;
@@ -72,8 +78,6 @@ section{
   text-align: center;
   color: white;
   position: static;
-  padding-top: 90px;
-  padding-bottom: 57px;
   animation-name: bg_animation;
   animation-duration: 6s;
   animation-iteration-count: infinite;
@@ -95,20 +99,22 @@ section{
 .heading_section .text_content{
   text-align: justify;
   text-align-last: center;
-  margin-bottom: 40px;
   color: #EDEDED;
   font-weight: bold;
   margin-left: 5px;
   margin-right: 5px;
+  margin-bottom: 40px;
 }
+
+
+
+/* navbar styles */
 
 .navbar {
   background-color: white;
   width: 100%;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, .03);
 }
-
-/* navbar styles */
 
 .navbar-brand {
   font-weight: bold;
