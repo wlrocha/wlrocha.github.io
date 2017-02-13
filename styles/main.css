@@ -258,17 +258,24 @@ section{
 }
 
 /* Portfolio section styles */
+.work_section{
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
 .work_section .description{
   margin-bottom: 80px;
 }
 
 .work_image{
   position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
   margin-bottom: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.work_image img{
+  width: 100%;
+  height: 100%;
 }
 
 .work_section .hover {
@@ -391,7 +398,7 @@ section{
 }
 
 .carousel-indicators{
-  bottom: 0;
+  bottom: -60px;
 }
 
 .carousel-indicators .active {
