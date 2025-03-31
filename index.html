@@ -1,518 +1,236 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Practice 4</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wish List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Dark background */
+            color: #eaeaea; /* Light text for contrast */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #1e1e1e; /* Darker content background */
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #ffffff; /* White heading */
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .product-item {
+            background-color: #2c2c2c; /* Dark product background */
+            border: 1px solid #444; /* Light border for contrast */
+            width: 30%;
+            padding: 15px;
+            box-sizing: border-box;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .product-item img {
+            max-width: 100%;
+            height: 200px; /* Fixed height for consistent image sizes */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        .product-item h2 {
+            font-size: 18px;
+            color: #ffffff; /* White text for product names */
+            margin-bottom: 10px;
+        }
+        .product-item a {
+            color: #1a73e8; /* Light blue for links */
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .product-item a:hover {
+            text-decoration: underline;
+        }
+        /* Ensure responsiveness */
+        @media (max-width: 768px) {
+            .product-item {
+                width: 48%;
+            }
+        }
+        @media (max-width: 480px) {
+            .product-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Wish List</h1>
+        <div class="product">
+            <!-- Product 1 -->
+            <div class="product-item">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3159330/header.jpg?t=1742705129" alt="Assassin's Creed Shadows">
+                <h2>Assassin's Creed Shadows</h2>
+                <a href="https://store.steampowered.com/app/3159330/Assassins_Creed_Shadows/" target="_blank">View Product</a>
+            </div>
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
+            <!-- Product 2 -->
+            <div class="product-item">
+                <img src="https://media.s-bol.com/Jr2GwW7K8OpJ/wMvBww/484x840.jpg" alt="Orbitkey Hybrid Leather Key Organizer">
+                <h2>Orbitkey Hybrid Leather Key Organizer</h2>
+                <a href="https://www.bol.com/nl/nl/p/orbitkey-hybrid-leather-key-organizer-sleutelhanger-sleuteltasje-black-zwart/9300000172104309" target="_blank">View Product</a>
+            </div>
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
+            <!-- Product 3 -->
+            <div class="product-item">
+                <img src="https://www.bfgcdn.com/1500_1500_90/301-0756-0211/la-sportiva-tarantula-boulder-klimschoenen.jpg" alt="La Sportiva Tarantula Boulder Shoes">
+                <h2>La Sportiva Tarantula Boulder Shoes</h2>
+                <a href="https://www.bergfreunde.nl/la-sportiva-tarantula-boulder-klimschoenen/" target="_blank">View Product</a>
+            </div>
 
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="fonts/et-line-font/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-    <!--[if IE]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-      <header class="heading_section vertical-center">
-        <div class="container">
-          <div class="row">
-            <div class="col-12  col-md-8 col-md-offset-2">
-                <h1 class="heading" class="text-center">Genius Web & Talos Inc.</h1>
-                <p class="text_content" class="text-center">Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales.</p>
+            <!-- Product 4 -->
+            <div class="product-item">
+                <img src="https://m.media-amazon.com/images/I/71Gktq1OTqL._AC_SX679_.jpg" alt="SmallRig ZV-1 Bracket Wooden Handle">
+                <h2>SmallRig ZV-1 Bracket Wooden Handle</h2>
+                <a href="https://www.amazon.nl/-/en/SMALLRIG-ZV-1-Bracket-Wooden-Handle/dp/B08HZ12TLH" target="_blank">View Product</a>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 text-center">
-            <button class="transparent_button">LEARN MORE</button>
-            <button class="hidden-xs green_button" onclick="window.location.href='#contact'" >CONTACT US</button>
-          </div>
-        </div>
-      </header>
-      <nav id="navbar" class="navbar navbar-static-top">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Talos</a>
-          </div>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a class="nav-link" href="#">HOME</a></li>
-            <li><a class="nav-link" href="#services">SERVICES</a></li>
-            <li><a class="nav-link" href="#about">ABOUT</a></li>
-            <li><a class="nav-link" href="#team">TEAM</a></li>
-            <li><a class="nav-link" href="#portfolio">PORTFOLIO</a></li>
-            <li><a class="nav-link" href="#blog">BLOG</a></li>
-            <li><a class="nav-link" href="#contact">CONTACT</a></li>
-          </ul>
-          </div>
-        </div>
-      </nav>
-    <section id="services" class="do_section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-8">
-            <h2>What we do</h2>
-            <p class="description">Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-sm-5 col-md-6">
-            <div class="media">
-              <div class="media-left">
-                <span class="glyph" aria-hidden="true" data-icon="&#xe001;"></span>
-              </div>
-              <div class="media-body">
-                <h3>Brand Identity</h3>
-                <p class="content">Lorem ipsum dolor sit met, maecenas eget vestibul justo imperdiet, wisi visus purus augue vulputate volupdate neque, curabitur dolor libero sodales vitae elit massa.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-5 col-md-6">
-            <div class="media">
-              <div class="media-left">
-                <span class="glyph" aria-hidden="true" data-icon="&#xe01b;"></span>
-              </div>
-              <div class="media-body">
-                <h3>Web Design</h3>
-                <p class="content">You can easily change icons by looking at <a href="#"> ET Line Icons</a>. wise rises gurus augue vulputate voluptate neque, curabitur dolor libber sodales vitae elit massa.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-sm-5 col-md-6">
-            <div class="media">
-              <div class="media-left">
-                <span class="glyph" aria-hidden="true" data-icon="&#xe04b;"></span>
-              </div>
-              <div class="media-body">
-                <h3>Social Marketing</h3>
-                <p class="content">Lorem ipsum dolor sit met, maecenas eget vestibul justo imperdiet, wisi visus purus augue vulputate volupdate neque, curabitur dolor libero sodales vitae elit massa.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-5 col-md-6">
-            <div class="media">
-              <div class="media-left">
-                <span class="glyph" aria-hidden="true" data-icon="&#xe027;"></span>
-              </div>
-              <div class="media-body">
-                <h3>CMS $ eCommerce</h3>
-                <p class="content">Lorem ipsum dolor sit met, maecenas eget vestibul justo imperdiet, wisi visus purus augue vulputate volupdate neque, curabitur dolor libero sodales vitae elit massa.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="about" class="studio_section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h2>Genius Studio</h2>
-            <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa.</p>
-            <p class="content">Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa.</p>
-          </div>
-          <div class="col-md-6">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2ZKV6B03I0s?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="team" class="team_section">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 col-md-4">
-            <div class="team_image">
-              <img class="img-responsive center-block" src="images/team_1.jpg" />
-              <div class="hover">
-                <div class=" social-links">
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                  <a href="#"><i class="fa fa-dribbble"></i></a>
-                  <a href="#"> <i class="fa fa-behance"></i></a>
-                </div>
-              </div>
-            </div>
-            <p class="name">jhonathan Doe</p>
-            <p class="job">designer</p>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="team_image">
-              <img class="img-responsive center-block" src="images/team_2.jpg" />
-              <div class="hover">
-                <div class=" social-links">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-dribbble"></i></a>
-                <a href="#"> <i class="fa fa-behance"></i></a>
-                </div>
-              </div>
-            </div>
-            <p class="name">Jenny L Martian</p>
-            <p class="job">UX Desginer</p>
-          </div>
-          <div class="col-sm-6 col-md-4 center-block">
-            <div class="team_image">
-              <img class="img-responsive center-block" src="images/team_3.jpg" />
-              <div class="hover">
-                <div class=" social-links">
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                  <a href="#"><i class="fa fa-dribbble"></i></a>
-                  <a href="#"> <i class="fa fa-behance"></i></a>
-                </div>
-              </div>
-            </div>
-            <p class="name">James David Doe</p>
-            <p class="job">Creative Director</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="portfolio" class="work_section">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs12 text-center">
-            <h3>Lastest Work</h3>
-            <p class="description">Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="work_image">
-              <img class="center-block" src="images/portfolio-img1.jpg" />
-              <div class="hover">
-                <a href="#"><i class="fa fa-chain"></i></a>
-                <h4>Illustration</h4>
-                <p>Graphic / Illustration / Poster</p>
-              </div>
-          </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="work_image">
-            <img class="img-responsive center-block" src="images/portfolio-img2.jpg" />
-            <div class="hover">
-              <a href="#"><i class="fa fa-chain"></i></a>
-              <h4>Illustration</h4>
-              <p>Graphic / Illustration / Poster</p>
-            </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="work_image">
-            <img class="img-responsive center-block" src="images/portfolio-img3.jpg" />
-            <div class="hover">
-              <a href="#"><i class="fa fa-chain"></i></a>
-              <h4>Illustration</h4>
-              <p>Graphic / Illustration / Poster</p>
-            </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="work_image">
-            <img class="img-responsive center-block" src="images/portfolio-img4.jpg" />
-            <div class="hover">
-              <a href="#"><i class="fa fa-chain"></i></a>
-              <h4>Illustration</h4>
-              <p>Graphic / Illustration / Poster</p>
-            </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="work_image">
-            <img class="img-responsive center-block" src="images/portfolio-img5.jpg" />
-            <div class="hover">
-              <a href="#"><i class="fa fa-chain"></i></a>
-              <h4>Illustration</h4>
-              <p>Graphic / Illustration / Poster</p>
-            </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="work_image">
-            <img class="img-responsive center-block" src="images/portfolio-img6.jpg" />
-            <div class="hover">
-              <a href="#"><i class="fa fa-chain"></i></a>
-              <h4>Illustration</h4>
-              <p>Graphic / Illustration / Poster</p>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="blog" class="blog_section">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="text-center">
-              <h3>Our Blog</h3>
-              <p class="description">Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p>
-            </div>
-          </div>
-          <div class="col-x2-12 col-sm-12 col-md-6">
-            <div class="post">
-              <p class="reference">Online Business / December 9, 2006</p>
-              <p class="title">The best way to make Online Business</p>
-              <p class="author">By Jhonathan Doe</p>
-            </div>
-          </div>
-          <div class="col-x2-12 col-sm-12 col-md-6">
-            <div class="post">
-              <p class="reference">Frontend Dev / December 9, 2006</p>
-              <p class="title">Frontend Developer vs UI Designer</p>
-              <p class="author">By Jhonny James</p>
-            </div>
-          </div>
-          <div class="col-x2-12 col-sm-6 col-md-6">
-            <div class="post">
-              <p class="reference">Social Makerting / December 9, 2006</p>
-              <p class="title">What is Social Marketing Business</p>
-              <p class="author">By Mary Louis</p>
-            </div>
-          </div>
-          <div class="col-x2-12 col-sm-6 col-md-6">
-            <div class="post">
-              <p class="reference">Web Design / December 9, 2006</p>
-              <p class="title">How to become a Web Designer</p>
-              <p class="author">By David Jenn</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="asked_section">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="text-center">
-              <h3>Asked Questions</h3>
-              <p class="description">Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p>
-            </div>
-          </div>
-          <div class="col-xs-12">
-            <div class="panel-group" id="accordion">
-              <div class="panel">
-                <div class="panel-heading">
-                  <div class="media">
-                    <div class="media-left">
-                      <span class="icon" aria-hidden="true" data-icon="&#xe001;"></span>
-                    </div>
-                    <div class="media-body">
-                     <h3 class="panel-title text-left" data-toggle="collapse" data-parent="#accordion" href="#collapse1">How to make a Brand Identity?</h3>
-                    </div>
-                  </div>
-                </div>
-                <div id="collapse1" class="panel-collapse collapse">
-                  <div class="panel-body">Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p>
-                    Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.
-                  </div>
-                </div>
-              </div>
-              <div class="panel">
-                <div class="panel-heading">
-                  <div class="media">
-                    <div class="media-left">
-                      <span class="icon" aria-hidden="true" data-icon="&#xe01b;"></span>
-                    </div>
-                    <div class="media-body">
-                      <h3 class="panel-title text-left" data-toggle="collapse" data-parent="#accordion" href="#collapse2">What is Web Design?</h3>
-                    </div>
-                  </div>
-                </div>
-                <div id="collapse2" class="panel-collapse collapse">
-                  <div class="panel-body">Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p>
-                    Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.
-                  </div>
-                </div>
-              </div>
-              <div class="panel">
-                <div class="panel-heading">
-                  <div class="media">
-                    <div class="media-left">
-                      <span class="icon" aria-hidden="true" data-icon="&#xe04b;"></span>
-                    </div>
-                    <div class="media-body">
-                      <h3 class="panel-title text-left" data-toggle="collapse" data-parent="#accordion" href="#collapse3">Why is Important Social Marketing?</h3>
-                    </div>
-                  </div>
-                </div>
-                <div id="collapse3" class="panel-collapse collapse">
-                  <div class="panel-body">Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p>
-                    Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.
-                  </div>
-                </div>
-              </div>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="testimonial_section">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="text-center">
-              <h3>Testimonial Words</h3>
-              <p class="description">Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p>
-            </div>
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-              <!-- Indicators -->
-              <ol class="carousel-indicators hidden-xs">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-              </ol>
-              <ol class="carousel-indicators visible-xs">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="item active">
-                  <div class="col-xs-12 col-sm-6">
-                    <div class="media">
-                      <div class="media-left">
-                        <img class="media-object" src="images/testimonial-img1.jpg" />
-                      </div>
-                      <div class="media-body">
-                        <p class="testimonial">Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p>
-                        <p class="author">Johny David</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="hidden-xs col-sm-6">
-                    <div class="media">
-                      <div class="media-left">
-                        <img class="media-object" src="images/testimonial-img2.jpg" />
-                      </div>
-                      <div class="media-body">
-                        <p class="testimonial">Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p>
-                        <p class="author">John Doe</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
-                    <div class="media">
-                      <div class="media-left">
-                        <img class="media-object" src="images/testimonial-img2.jpg" />
-                      </div>
-                      <div class="media-body">
-                        <p class="testimonial">Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p>
-                        <p class="author">John Doe</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="hidden-xs col-sm-6">
-                    <div class="media">
-                      <div class="media-left">
-                        <img class="media-object" src="images/testimonial-img3.jpg" />
-                      </div>
-                      <div class="media-body">
-                        <p class="testimonial">Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p>
-                        <p class="author">James Autor</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="col-xs-12 col-sm-6">
-                    <div class="media">
-                      <div class="media-left">
-                        <img class="media-object" src="images/testimonial-img3.jpg" />
-                      </div>
-                      <div class="media-body">
-                        <p class="testimonial">Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p>
-                        <p class="author">James Autor</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="contact" class="contact_section">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 text-center">
-            <h3>Get in touch</h3>
-            <p class="description">Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p>
-          </div>
-          <div class="col-xs-12 col-sm-3 col-sm-offset-3">
-            <input type="text" class="form-control" id="name" placeholder="Name">
-            <input type="text" class="form-control" id="email" placeholder="Email">
-            <input type="text" class="form-control" id="phone" placeholder="Phone">
-          </div>
-          <div class="col-xs-12 col-sm-3">
-            <textarea class="form-control" id="mesage" placeholder="Message"></textarea>
-          </div>
-          <div class="col-xs-12 text-center">
-            <button class="green_button">SHOOT MESSAGE</button>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 text-center">
-            <p>Copyright 	&copy; Talos HTML Template | All Rights Reserved.</p>
-          </div>
-          <div class="col-xs-12">
-            <div class="social-links text-center">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-dribbble"></i></a>
-              <a href="#"><i class="fa fa-behance"></i></a>
-              <a href="#"><i class="fa fa-github"></i></a>
-              <a href="#"><i class="fa fa-google-plus"></i></a>
+            <!-- Product 5 -->
+            <div class="product-item">
+                <img src="https://m.media-amazon.com/images/I/71mtfKxaryL._AC_SX679_.jpg" alt="Adjustable Chicken Harness">
+                <h2>Adjustable Chicken Harness</h2>
+                <a href="https://www.amazon.nl/-/en/Adjustable-Chicken-Comfortable-Breathable-Training/dp/B09G6D8T86/" target="_blank">View Product</a>
             </div>
-          </div>
-          </div>
+
+            <!-- Product 6 -->
+            <div class="product-item">
+                <img src="https://image.coolblue.nl/max/500x500/products/2103336" alt="Nothing Ear (1)">
+                <h2>Nothing Ear (1)</h2>
+                <a href="https://www.coolblue.nl/en/product/955379/nothing-ear-open-white.html" target="_blank">View Product</a>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-item">
+                <img src="https://m.media-amazon.com/images/I/61esrguF+rL._AC_SX679_.jpg" alt="LAMY AL-star EMR Stylus Pen">
+                <h2>LAMY AL-star EMR Stylus Pen</h2>
+                <a href="https://www.amazon.nl/LAMY-AL-star-EMR-Stylus-Pen/dp/B08K1JT1C2/ref=asc_df_B08K1JT1C2/?th=1" target="_blank">View Product</a>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-item">
+                <img src="https://m.media-amazon.com/images/I/51qmua8ebHL._AC_SX679_.jpg" alt="Samsung Galaxy Watch R390">
+                <h2>Samsung Galaxy Watch R390</h2>
+                <a href="https://www.amazon.nl/Samsung-Galaxy-R390-IP68-SM-R390/dp/B0CVQ5C2ZZ/" target="_blank">View Product</a>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="product-item">
+                <img src="https://eu-images.contentstack.com/v3/assets/blt7dcd2cfbc90d45de/blt141816de075d7712/60dbb8dfa7307e39e4df1f7f/5-2_297.jpg?format=pjpg&auto=webp&quality=75%2C90&width=1920" alt="Royal Leather Bracelet">
+                <h2>Royal Leather Bracelet</h2>
+                <a href="https://www.trendhim.nl/zwart-zwarte-roy-leren-armband-p.html" target="_blank">View Product</a>
+            </div>
+
+            <!-- Product 10 -->
+            <div class="product-item">
+                <img src="https://eu-images.contentstack.com/v3/assets/blt7dcd2cfbc90d45de/bltb16f51e607138f15/60dc2b12cbc6070f5c3e4c82/rst-mpvd-vday21-ig-20251-20257-14.jpg?format=pjpg&auto=webp&quality=75%2C90&width=1920" alt="Icon Leather Bracelet">
+                <h2>Icon Leather Bracelet</h2>
+                <a href="https://www.trendhim.nl/icon-armband-van-zwart-leer-en-zilverkleurig-roestvrij-staal-p.html" target="_blank">View Product</a>
+            </div>
+
+            <!-- Product 11 -->
+            <div class="product-item">
+                <img src="https://eu-images.contentstack.com/v3/assets/blt7dcd2cfbc90d45de/blt50647565aec87792/60dbadcaed93bb0fb199b8a4/10-4_46.jpg?format=pjpg&auto=webp&quality=75%2C90&width=1920" alt="Retro Leather Bracelet">
+                <h2>Retro Leather Bracelet</h2>
+                <a href="https://www.trendhim.nl/zwarte-leren-retro-armband-p.html" target="_blank">View Product</a>
+            </div>
+
+            <!-- Product 12 -->
+            <div class="product-item">
+                <img src="https://eu-images.contentstack.com/v3/assets/blt7dcd2cfbc90d45de/blt845d94557966a82e/60dc28c720a5380ed1a4d95c/1-1.3c3fec0232d7fdb55f30dd6275de0466_3.jpg?format=pjpg&auto=webp&quality=75%2C90&width=1920" alt="Naxos Leather Bracelet">
+                <h2>Naxos Leather Bracelet</h2>
+                <a href="https://www.trendhim.nl/naxos-leren-armband-met-picasso-stenen-p.html" target="_blank">View Product</a>
+            </div>
+
+            <!-- Product 13 -->
+            <div class="product-item">
+                <img src="https://img01.ztat.net/article/spp-media-p1/d2092558608131ab999791beba576061/e52e651606ef40faaa13a8ed13a99cce.jpg?imwidth=1800&filter=packshot" alt="Ray-Ban Sunglasses">
+                <h2>Ray-Ban Sunglasses</h2>
+                <a href="https://www.zalando.nl/ray-ban-zonnebril-black-ra254e00g-q13.html?ssku=RA254E00G-Q130054000&lang=nl&otid=default&wmc=SEM310_NB_GO._1466588762_701171515_35858411039.&opc=2211" target="_blank">View Product</a>
+            </div>
+
+            <!-- Product 14 -->
+            <div class="product-item">
+                <img src="https://m.media-amazon.com/images/I/71jbOhGwqXL._AC_SX679_.jpg" alt="RL Grips Magnetic Water Bottle Holder">
+                <h2>RL Grips Magnetic Water Bottle Holder</h2>
+                <a href="https://www.amazon.nl/RL-Grips%C2%AE-Magnetische-Waterfleshouder-Accessoires/dp/B0DJS1D5F1" target="_blank">View Product</a>
+            </div>
+
+            <!-- Product 15 -->
+            <div class="product-item">
+                <img src="https://ae-pic-a1.aliexpress-media.com/kf/S509956a8cb8349c684e27167013fe5a8p.png_960x960.png_.avif" alt="Product from AliExpress">
+                <h2>Keyboard</h2>
+                <a href="https://nl.aliexpress.com/item/1005008556126260.html" target="_blank">View Product</a>
+            </div>
+
+            <!-- Product 16 -->
+            <div class="product-item">
+                <img src="https://thenewsound.nl/cdn/shop/files/dm13-bt-201655.jpg?v=1738429307&width=3840" alt="DM13">
+                <h2>Fiio CD Player</h2>
+                <a href="https://thenewsound.nl/products/dm13?variant=49695617384784&country=NL&currency=EUR" target="_blank">View Product</a>
+            </div>
+
+            <!-- Product 17 -->
+            <div class="product-item">
+                <img src="https://m.media-amazon.com/images/I/81I48DUeD6L._AC_SY879_.jpg" alt="Xenoblade Chronicles X">
+                <h2>Xenoblade Chronicles X</h2>
+                <a href="https://www.amazon.nl/-/en/Xenoblade-Chronicles-X-Definitive-Edition/dp/B0DLGN1SC5" target="_blank">View Product</a>
+            </div>
+
+            <!-- Product 18 -->
+            <div class="product-item">
+                <img src="https://m.media-amazon.com/images/I/718AJgORfeL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="Ruff Vol Album">
+                <h2>2 Ruff Vol 1 LP</h2>
+                <a href="https://www.amazon.nl/2-Ruff-Vol-Chase-Status/dp/B0CJB1PVR2/ref=asc_df_B0CJB1PVR2/" target="_blank">View Product</a>
+            </div>
+
+            <!-- Product 19 -->
+            <div class="product-item">
+                <img src="https://media.s-bol.com/qM3MR8wQgg52/gKvkWj/550x550.jpg" alt="Metallica Album">
+                <h2>Metallica LP</h2>
+                <a href="https://www.bol.com/nl/nl/p/metallica-metallica/9300000042706678" target="_blank">View Product</a>
+            </div>
+
+            <!-- Product 20 -->
+            <div class="product-item">
+                <img src="https://media.s-bol.com/vo1GvEwYrERm/550x238.jpg" alt="Cocoon Travel Hammock">
+                <h2>Cocoon Travel Hammock</h2>
+                <a href="https://www.bol.com/nl/nl/p/cocoon-travel-hammock-blue-moon-hangmat/9200000133109673/" target="_blank">View Product</a>
+            </div>
+
+            <!-- Product 21 -->
+            <div class="product-item">
+                <img src="https://m.media-amazon.com/images/I/718XxIAvQ7L._AC_SX679_.jpg" alt="Deftones Album">
+                <h2>Deftones Album</h2>
+                <a href="https://www.amazon.nl/-/en/Deftones/dp/B004TRKH6M/" target="_blank">View Product</a>
+            </div>
+
+            <!-- Product 22 -->
+            <div class="product-item">
+                <img src="https://assets3.razerzone.com/Q1bwZdXry2hyYUwHYEzacWj37sg=/1500x1000/https%3A%2F%2Fmedias-p1.phoenix.razer.com%2Fsys-master-phoenix-images-container%2Fh84%2Fh79%2F9488744874014%2F230316-atlas-white-1500x1000-1.jpg" alt="Razer Atlas Gaming Mouse Mat">
+                <h2>Razer Atlas Gaming Mouse Mat</h2>
+                <a href="https://www.razer.com/eu-en/gaming-mouse-mats/Razer-Atlas/RZ02-04890200-R3M1" target="_blank">View Product</a>
+            </div>
+
         </div>
-      </div>
     </div>
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script
-      src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-      integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
-      crossorigin="anonymous"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- build:js scripts/plugins.js -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- endbuild -->
-
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-  </body>
+</body>
 </html>
